@@ -10,8 +10,8 @@
       <composite:attribute name="usernameValue" />
       <composite:attribute name="passwordLabel" />
       <composite:attribute name="passwordValue" />
-      <composite:attribute name="responseLabel" />
-      <composite:attribute name="responseValue" /> 
+      <composite:attribute name="response2Label" />
+      <composite:attribute name="response2Value" /> 
       <composite:attribute name="loginButtonLabel" />
       <composite:attribute name="loginButtonAction" 
          method-signature="java.lang.String login()" />
@@ -21,12 +21,12 @@
       <h:form>
          <h:message for="loginPanel" style="color:red;" />
          <h:panelGrid columns="2" id="loginPanel">
-            #{cc.attrs.usernameLabel} : 
+            #{cc.attrs.usernameLabel} 
             <h:inputText id="username" value="#{cc.attrs.usernameValue}" />
-            #{cc.attrs.passwordLabel} : 
+            #{cc.attrs.passwordLabel} 
             <h:inputSecret id="password" value="#{cc.attrs.passwordValue}" />
-            #{cc.attrs.responseLabel} : 
-            <h:inputText id="response2" value="#{cc.attrs.responseValue}" />  
+            #{cc.attrs.response2Label} 
+            <h:outputText id="response2" value="#{cc.attrs.response2Value}" />  
 
          </h:panelGrid>
          <h:commandButton action="#{cc.attrs.loginButtonAction}" 
