@@ -11,7 +11,7 @@
             org.springframework.web.jsf.el.SpringBeanFacesELResolver
         </el-resolver>
     </application> 
-
+    
    <managed-bean>
       <managed-bean-name>userData</managed-bean-name>
       <managed-bean-class>com.tutorialspoint.test.UserData</managed-bean-class>
